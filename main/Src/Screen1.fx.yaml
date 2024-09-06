@@ -1,0 +1,421 @@
+Screen1 As screen:
+    Fill: =RGBA(204, 231, 246, 0.5)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Bold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =80
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1366
+        ZIndex: =1
+
+        Label1 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(40, 134, 222, 1)
+            Font: =App.Theme.Font
+            Height: =Parent.Height
+            Size: =25
+            Text: ="Patch Function"
+            Width: =Parent.Width
+            ZIndex: =1
+
+    Label2 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Name 🤵🏻"
+        X: =48
+        Y: =141
+        ZIndex: =2
+
+    txtname As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        X: =280
+        Y: =141
+        ZIndex: =3
+
+    Label3 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Department 🏬"
+        Width: =172
+        X: =48
+        Y: =216
+        ZIndex: =4
+
+    Departmentfield As dropdown:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: ="Select Branch"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =App.Theme.Font
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Items: =Choices('Employee form'.Department)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =13
+        X: =280
+        Y: =216
+        ZIndex: =5
+
+    Label4 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Gender 🙍👧🏻"
+        Width: =190
+        X: =48
+        Y: =294
+        ZIndex: =6
+
+    Gender As radio:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        Font: =App.Theme.Font
+        Height: =60
+        HoverColor: =App.Theme.Colors.Darker30
+        Items: =Choices('Employee form'.Gender)
+        Layout: =Layout.Horizontal
+        RadioBorderColor: =App.Theme.Colors.Primary
+        RadioSelectionFill: =App.Theme.Colors.Primary
+        Size: =13
+        Width: =320
+        X: =280
+        Y: =284
+        ZIndex: =7
+
+    Label5 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Salary 💵"
+        X: =48
+        Y: =378
+        ZIndex: =8
+
+    "'salary$' As text":
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Format: =TextFormat.Number
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        OnSelect: =
+        Size: =13
+        X: =280
+        Y: =378
+        ZIndex: =9
+
+    Label6 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Phone Number ☎️"
+        Width: =210
+        X: =48
+        Y: =452
+        ZIndex: =10
+
+    phonenumber As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Format: =TextFormat.Number
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        X: =280
+        Y: =452
+        ZIndex: =11
+
+    Label7 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Age 🅰️"
+        X: =48
+        Y: =516
+        ZIndex: =12
+
+    age As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Format: =TextFormat.Number
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        X: =280
+        Y: =516
+        ZIndex: =13
+
+    Label8 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Full Name"
+        Width: =174
+        X: =764
+        Y: =141
+        ZIndex: =14
+
+    txtfullname As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        HintText: ="Employee Name"
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        X: =984
+        Y: =141
+        ZIndex: =15
+
+    Label9 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Department "
+        Width: =194
+        X: =764
+        Y: =216
+        ZIndex: =16
+
+    department As dropdown:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =App.Theme.Font
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Items: =Choices('Emp details'.Department)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =13
+        X: =984
+        Y: =216
+        ZIndex: =17
+
+    Label10 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Gender"
+        X: =764
+        Y: =294
+        ZIndex: =18
+
+    gender As radio:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        Font: =App.Theme.Font
+        Height: =60
+        HoverColor: =App.Theme.Colors.Darker30
+        Items: =Choices('Emp details'.Gender)
+        Layout: =Layout.Horizontal
+        RadioBorderColor: =App.Theme.Colors.Primary
+        RadioSelectionFill: =App.Theme.Colors.Primary
+        Size: =13
+        Width: =328
+        X: =984
+        Y: =284
+        ZIndex: =19
+
+    Label11 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Age"
+        X: =764
+        Y: =378
+        ZIndex: =20
+
+    txtAge As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Format: =TextFormat.Number
+        HintText: ="Age"
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        X: =984
+        Y: =378
+        ZIndex: =21
+
+    Label12 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Salary $"
+        X: =764
+        Y: =452
+        ZIndex: =22
+
+    currentsalary As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Format: =TextFormat.Number
+        HintText: ="Current Salary"
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        X: =984
+        Y: =452
+        ZIndex: =23
+
+    Label13 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Size: =17
+        Text: ="Address"
+        X: =764
+        Y: =516
+        ZIndex: =24
+
+    txtAddress As text:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Height: =70
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Mode: =TextMode.MultiLine
+        Size: =13
+        X: =984
+        Y: =516
+        ZIndex: =25
+
+    btnSubmit As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =40
+        OnSelect: |
+            =Patch('Employee form',Defaults('Employee form'),{Title:txtname.Text,Department:Departmentfield.Selected,Gender:Gender.Selected,Salary:Value('salary$'.Text),'Phone Number':Value(phonenumber.Text),Age:Value(age.Text)});Patch('Emp details',Defaults('Emp details'),{Title:txtfullname.Text,Department:department.SelectedText,Gender:gender.Selected,Age:Value(txtAge.Text),Salary:Value(currentsalary.Text),Address:txtAddress.Text});Notify("Successfully Submitted...",NotificationType.Success);Reset(txtname);Reset(Departmentfield);Reset(Gender);Reset('salary$');Reset(phonenumber);Reset(age);Reset(txtfullname);Reset(department);Reset(gender);Reset(txtAge);Reset(currentsalary);Reset(txtAddress);
+        Text: ="Submit"
+        Width: =120
+        X: =634
+        Y: =682
+        ZIndex: =26
+
